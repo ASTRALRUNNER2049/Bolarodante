@@ -4,27 +4,31 @@ using UnityEngine;
 
 public class MovimientoBola : MonoBehaviour
 {
-   
-    public float speed = 10f;  
-    private Rigidbody rb;      
+    public Rigidbody bolaRigidbody;
 
-    void Start()
+    public float verticalVelocity;
+    public float horizontalVelocity;
+
+    void Update()
     {
-     
-        rb = GetComponent<Rigidbody>();
-    }
+        if (Input.GetKey(KeyCode.W))
+        {
+            bolaRigidbody.AddTorque(0, 0, -verticalVelocity);
+        }
 
-  
-    void FixedUpdate()
-    {
-   
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.S))
+        {
+            bolaRigidbody.AddTorque(0, 0, verticalVelocity);
+        }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            bolaRigidbody.AddTorque(horizontalVelocity, 0, 0);
+        }
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
-      
-        rb.AddForce(movement * speed);
+        if (Input.GetKey(KeyCode.D))
+        {
+            bolaRigidbody.AddTorque(-horizontalVelocity, 0, 0);
+        }
     }
 }
