@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Plataformas volantes.cs" />
     <Compile Include="Assets\Scripts\MovimientoBola.cs" />
   </ItemGroup>
   <ItemGroup>
