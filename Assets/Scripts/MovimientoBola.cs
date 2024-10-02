@@ -31,4 +31,14 @@ public class MovimientoBola : MonoBehaviour
             bolaRigidbody.AddTorque(-horizontalVelocity, 0, 0);
         }
     }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (gameObject.tag == "Muerte")
+    //    {
+    //        Destroy(gameObject);
+    //    }
+
+
+    //}
 }
