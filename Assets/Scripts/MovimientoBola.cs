@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MovimientoBola : MonoBehaviour
 {
+    public GameObject Player;
     public Rigidbody bolaRigidbody;
+    public Respawn Respawn;
 
     public float verticalVelocity;
     public float horizontalVelocity;
@@ -32,13 +34,14 @@ public class MovimientoBola : MonoBehaviour
         }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (gameObject.tag == "Muerte")
-    //    {
-    //        Destroy(gameObject);
-    //    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Muerte")
+        {
+            Destroy(gameObject);
+            Respawn.MuerteBola();
+        }
 
 
-    //}
+    }
 }
