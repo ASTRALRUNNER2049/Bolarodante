@@ -7,6 +7,8 @@ public class MovimientoBola : MonoBehaviour
     public GameObject Player;
     public Rigidbody bolaRigidbody;
     public Respawn Respawn;
+    public int vidas = 3;
+    public int monedas = 0;
 
     public float verticalVelocity;
     public float horizontalVelocity;
@@ -38,8 +40,24 @@ public class MovimientoBola : MonoBehaviour
     {
         if (collision.gameObject.tag == "Muerte")
         {
-            Destroy(gameObject);
+            vidas = -1;
             Respawn.MuerteBola();
+            Debug.Log("Has Muerto, tienes -1 Vida");
+           
+            if (vidas == 0)
+            {
+               
+            }
+
+
+        }
+
+
+
+        if (collision.gameObject.tag == "Moneda")
+        {
+            monedas = +1;
+            Debug.Log("Has cogido 1 moneda");
         }
 
 

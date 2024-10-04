@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 370920968}
   m_Layer: 0
   m_Name: Consumible (7)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1358,7 +1358,7 @@ GameObject:
   - component: {fileID: 423400269}
   m_Layer: 0
   m_Name: Consumible (6)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1574,7 +1574,7 @@ Transform:
   m_GameObject: {fileID: 538520949}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -52.328, y: 12.76, z: 0.09}
+  m_LocalPosition: {x: -52.328, y: 12.797, z: 0.09}
   m_LocalScale: {x: 1.5443602, y: 0.34359923, z: 1.5443602}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 936845296}
   m_Layer: 0
   m_Name: Consumible (10)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2212,7 +2212,7 @@ GameObject:
   - component: {fileID: 1057342557}
   m_Layer: 0
   m_Name: Consumible (3)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2345,7 +2345,7 @@ GameObject:
   - component: {fileID: 1121883652}
   m_Layer: 0
   m_Name: Consumible (2)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2478,7 +2478,7 @@ GameObject:
   - component: {fileID: 1143644235}
   m_Layer: 0
   m_Name: Consumible (8)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2700,32 +2700,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1265009047 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 636082984044868641, guid: 84bbb476847831c4f946c2c7d2627f36,
-    type: 3}
-  m_PrefabInstance: {fileID: 2884283408402707943}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1265009052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 540074022808468787, guid: 84bbb476847831c4f946c2c7d2627f36,
     type: 3}
   m_PrefabInstance: {fileID: 2884283408402707943}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1265009054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265009047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa2b81b1ed6ae9f4ba466eef8bd3cf0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosRespawn: {fileID: 538520953}
-  PosPlayer: {fileID: 1265009052}
 --- !u!1 &1300542344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2969,7 +2949,7 @@ GameObject:
   - component: {fileID: 1489112044}
   m_Layer: 0
   m_Name: Consumible (1)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3286,6 +3266,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1591434570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8726738488992595976, guid: 13e5190e0da9bc740b6dac513e34f16c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3459486090649614262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1591434572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591434570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2b81b1ed6ae9f4ba466eef8bd3cf0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosRespawn: {fileID: 538520953}
+  PosPlayer: {fileID: 1265009052}
 --- !u!1 &1629508197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,7 +3479,7 @@ GameObject:
   - component: {fileID: 1721733921}
   m_Layer: 0
   m_Name: Consumible (5)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3612,7 +3612,7 @@ GameObject:
   - component: {fileID: 1999001418}
   m_Layer: 0
   m_Name: Consumible (4)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3745,7 +3745,7 @@ GameObject:
   - component: {fileID: 2023812997}
   m_Layer: 0
   m_Name: Consumible (9)
-  m_TagString: Untagged
+  m_TagString: Moneda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4040,6 +4040,11 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7394902417551039841, guid: 84bbb476847831c4f946c2c7d2627f36,
+        type: 3}
+      propertyPath: Respawn
+      value: 
+      objectReference: {fileID: 1591434572}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4047,11 +4052,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1709806370}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 636082984044868641, guid: 84bbb476847831c4f946c2c7d2627f36,
-        type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 1265009054}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84bbb476847831c4f946c2c7d2627f36, type: 3}
 --- !u!1001 &3459486090649614262
 PrefabInstance:
@@ -4125,7 +4126,11 @@ PrefabInstance:
     - {fileID: 5982773234289515490, guid: 13e5190e0da9bc740b6dac513e34f16c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8726738488992595976, guid: 13e5190e0da9bc740b6dac513e34f16c,
+        type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1591434572}
   m_SourcePrefab: {fileID: 100100000, guid: 13e5190e0da9bc740b6dac513e34f16c, type: 3}
 --- !u!1001 &6074491409777038871
 PrefabInstance:
@@ -4194,6 +4199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Consumible
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281998299509399098, guid: 78a72284a2aa2e340bddc5ac1734cd1d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Moneda
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
