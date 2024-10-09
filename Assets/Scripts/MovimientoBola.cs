@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MovimientoBola : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject Perdiste;
     public Rigidbody bolaRigidbody;
     public Respawn Respawn;
     public int vidas = 100;
@@ -63,7 +65,12 @@ public class MovimientoBola : MonoBehaviour
            
             if (vidas == 0)
             {
+              
               Destroy(gameObject);
+              Time.timeScale = 0;
+
+                Perdiste.SetActive(true);
+              
             }
 
 
