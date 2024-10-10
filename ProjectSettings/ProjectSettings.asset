@@ -915,11 +915,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3a4e7efb-4639-45b6-bffe-9a39e5364f4b
+  cloudProjectId: de899b1c-c11a-400a-a9ad-10be1fe51176
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project 2024-10-09_18-40-30
-  organizationId: astraldisaster1635
+  projectName: My project (1)
+  organizationId: juanabadcala
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

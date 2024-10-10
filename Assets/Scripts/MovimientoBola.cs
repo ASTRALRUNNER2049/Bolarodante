@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MovimientoBola : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class MovimientoBola : MonoBehaviour
     public Rigidbody rb;
     public float fuerzasalto = 8f;
     public bool Salto;
-    public GameObject Reset;
     private bool isGrounded = false;
     public float verticalVelocity;
     public float horizontalVelocity;
@@ -58,7 +58,7 @@ public class MovimientoBola : MonoBehaviour
         }
         if (!isGrounded)
         {
-            if (Salto = Input.GetKey("e"))
+            if (Salto = Input.GetKeyDown(KeyCode.E))
             {
                 rb.AddForce(new Vector3(0,fuerzasalto, 0), ForceMode.Impulse);
             }
@@ -95,8 +95,8 @@ public class MovimientoBola : MonoBehaviour
             Ganaste.SetActive(true);
         }
 
-
     }
+   
 
-    
+
 }
