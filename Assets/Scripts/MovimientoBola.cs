@@ -6,6 +6,7 @@ using TMPro;
 public class MovimientoBola : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject Ganaste;
     public GameObject Perdiste;
     public Rigidbody bolaRigidbody;
     public Respawn Respawn;
@@ -14,7 +15,8 @@ public class MovimientoBola : MonoBehaviour
     public Rigidbody rb;
     public float fuerzasalto = 8f;
     public bool Salto;
-
+    public GameObject Reset;
+    private bool isGrounded = false;
     public float verticalVelocity;
     public float horizontalVelocity;
 
@@ -23,7 +25,9 @@ public class MovimientoBola : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Salto = false;
         vidas = 3;
-        monedas = 0;    
+        monedas = 0;
+
+      
     }
     private void FixedUpdate()
     {
@@ -52,13 +56,19 @@ public class MovimientoBola : MonoBehaviour
         {
             bolaRigidbody.AddTorque(-horizontalVelocity, 0, 0);
         }
+        if (!isGrounded)
+        {
+            if (Salto = Input.GetKey("e"))
+            {
+                rb.AddForce(new Vector3(0,fuerzasalto, 0), ForceMode.Impulse);
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Muerte")
-        {
-            
+        { 
             vidas--;
             Respawn.MuerteBola();
             Debug.Log("Has Muerto, tienes -1 Vida");
@@ -68,15 +78,10 @@ public class MovimientoBola : MonoBehaviour
               
               Destroy(gameObject);
               Time.timeScale = 0;
-
-                Perdiste.SetActive(true);
+              Perdiste.SetActive(true);
               
             }
-
-
         }
-
-
 
         if (collision.gameObject.tag == "Moneda")
         {
@@ -84,6 +89,14 @@ public class MovimientoBola : MonoBehaviour
             Debug.Log("Has cogido 1 moneda");
         }
 
+        if (collision.gameObject.tag == "Meta")
+        {
+            Time.timeScale = 0;
+            Ganaste.SetActive(true);
+        }
+
 
     }
+
+    
 }

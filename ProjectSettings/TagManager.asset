@@ -7,6 +7,8 @@ TagManager:
   - Muerte
   - Moneda
   - Perdiste
+  - Meta
+  - Ganaste
   layers:
   - Default
   - TransparentFX
