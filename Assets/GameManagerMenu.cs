@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Reiniciar : MonoBehaviour
+public class GameManagerMenu : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +16,14 @@ public class Reiniciar : MonoBehaviour
     {
         
     }
-    public void Restart()
+    public void EscenaJuego()
     {
         SceneManager.LoadScene("SampleScene");
         Time.timeScale = 1f;
     }
+
     public void Salir()
     {
-        SceneManager.LoadScene("MENU INICIO");
+        Application.Quit();
     }
-
 }

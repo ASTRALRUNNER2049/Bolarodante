@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Reiniciar : MonoBehaviour
+public class Resumir : MonoBehaviour
 {
-
+    public GameObject Pausa;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +16,10 @@ public class Reiniciar : MonoBehaviour
     {
         
     }
-    public void Restart()
+    public void pausa()
     {
-        SceneManager.LoadScene("SampleScene");
+        Pausa.SetActive(false);
         Time.timeScale = 1f;
     }
-    public void Salir()
-    {
-        SceneManager.LoadScene("MENU INICIO");
-    }
-
+ 
 }
