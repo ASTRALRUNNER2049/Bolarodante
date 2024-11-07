@@ -13,6 +13,6 @@ public class cosasquegiran : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0f * Time.deltaTime, 0f * Time.deltaTime, 1200f * Time.deltaTime);
+        transform.Rotate(0f * Time.deltaTime, 0f * Time.deltaTime, -1000f * Time.deltaTime);
     }
 }
