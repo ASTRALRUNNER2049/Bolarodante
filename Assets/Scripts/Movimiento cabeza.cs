@@ -12,6 +12,7 @@ public class Movimientocabeza : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+
     }
 
 
