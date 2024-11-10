@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Consumible : MonoBehaviour
 {
-    private AudioSource audioSource;
+    [SerializeField] private float CantidadSocialcredit;
+    [SerializeField] private SocialCredit socialcredit;
+   
     [SerializeField] AudioClip SocialCredit;
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+       
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        audioSource.PlayOneShot(SocialCredit);
+        socialcredit.SumarSocialCredit(CantidadSocialcredit);
+        ControladorSonido.Instance.EjecutarSonido(SocialCredit);
         Destroy(gameObject);
     }
 

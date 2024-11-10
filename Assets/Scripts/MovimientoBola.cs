@@ -9,23 +9,26 @@ public class MovimientoBola : MonoBehaviour
     public GameObject Player;
     public GameObject Ganaste;
     public GameObject Perdiste;
+   
     public Rigidbody bolaRigidbody;
     public Respawn Respawn;
+   
     public int vidas = 100;
-    public int monedas = 0;
     public Rigidbody rb;
     public float fuerzasalto = 8f;
-    public bool Salto;
-    private bool isGrounded = false;
     public float verticalVelocity;
     public float horizontalVelocity;
+
+    private RaycastHit _raycastHit;
+    private int _inAir;
+
+    public float longitudRaycast;
+    public LayerMask raycastLayerMask;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Salto = false;
         vidas = 3;
-        monedas = 0;
 
       
     }
@@ -56,13 +59,14 @@ public class MovimientoBola : MonoBehaviour
         {
             bolaRigidbody.AddTorque(-horizontalVelocity, 0, 0);
         }
-        if (!isGrounded)
-        {
-            if (Salto = Input.GetKeyDown(KeyCode.E))
-            {
-                rb.AddForce(new Vector3(0,fuerzasalto, 0), ForceMode.Impulse);
-            }
-        }
+        Salto();
+        //if (!isGrounded)
+        //{
+        //    if (Salto = Input.GetKeyDown(KeyCode.E))
+        //    {
+        //        rb.AddForce(new Vector3(0,fuerzasalto, 0), ForceMode.Impulse);
+        //    }
+        //}
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -83,12 +87,6 @@ public class MovimientoBola : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.tag == "Moneda")
-        {
-            monedas++;
-            Debug.Log("Has cogido 1 moneda");
-        }
-
         if (collision.gameObject.tag == "Meta")
         {
             Time.timeScale = 0;
@@ -96,7 +94,35 @@ public class MovimientoBola : MonoBehaviour
         }
 
     }
-   
+
+    private void Salto()
+    {
+        Physics.Raycast(transform.position, Vector3.down, out _raycastHit, longitudRaycast, raycastLayerMask);
+
+        if (_raycastHit.collider != null)
+        {
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (_inAir == 2)
+                {
+                    _inAir = 0;
+                }
+
+                if (_inAir == 0)
+                {
+                    GetComponent<Rigidbody>().AddForce(new Vector3(0, fuerzasalto, 0), ForceMode.Impulse);
+                    _inAir = 1;
+                }
+            }
+            else
+            {
+                _inAir = 2;
+            }
+        }
+    }
+
+
 
 
 }

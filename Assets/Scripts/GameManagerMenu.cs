@@ -18,12 +18,16 @@ public class GameManagerMenu : MonoBehaviour
     }
     public void EscenaJuego()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MainGame");
         Time.timeScale = 1f;
     }
 
     public void Salir()
     {
         Application.Quit();
+    }
+    public void Controles()
+    {
+        SceneManager.LoadScene("Controles");
     }
 }

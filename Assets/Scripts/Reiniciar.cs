@@ -19,12 +19,12 @@ public class Reiniciar : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MainGame");
         Time.timeScale = 1f;
     }
     public void Salir()
     {
-        SceneManager.LoadScene("MENU INICIO");
+        SceneManager.LoadScene("MenuInicio");
     }
 
 }

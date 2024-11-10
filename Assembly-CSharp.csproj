@@ -63,17 +63,20 @@
     <Compile Include="Assets\Scripts\Reiniciar.cs" />
     <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Scripts\Consumible.cs" />
+    <Compile Include="Assets\Scripts\ObstaculosEspada.cs" />
     <Compile Include="Assets\Scripts\Pausa.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Movimiento cabeza.cs" />
+    <Compile Include="Assets\Scripts\GameManagerMain.cs" />
+    <Compile Include="Assets\Scripts\MovimientoMeta.cs" />
     <Compile Include="Assets\Scripts\GameManagerMenu.cs" />
-    <Compile Include="Assets\Scripts\Plataformas volantes.cs" />
+    <Compile Include="Assets\Scripts\Plataformas.cs" />
     <Compile Include="Assets\Scripts\MovimientoBola.cs" />
-    <Compile Include="Assets\Scripts\EfectodeSonido.cs" />
-    <Compile Include="Assets\Scripts\cosas que giran.cs" />
+    <Compile Include="Assets\TUTORIALES\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\FloatingWall.cs" />
     <Compile Include="Assets\Scripts\Resumir.cs" />
+    <Compile Include="Assets\Scripts\ControladorSonido.cs" />
+    <Compile Include="Assets\Scripts\SocialCredit.cs" />
     <Compile Include="Assets\Scripts\Muerte.cs" />
+    <Compile Include="Assets\Scripts\EfectosSonoros.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -92,6 +95,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
